@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond';
+    background-color: rgb(37, 37, 37);
+    line-height: 1.6;
+    color: aliceblue;
+}
+
+header {
+         background-color: rgb(90, 0, 94);
+         color: rgb(255, 255, 255);
+         text-align: center;
+         padding: 30px 20px;
+         border-bottom:3px solid #000000
+}
+
+header h1 {
+    font-family: 'UnifrakturCook';
+    font-size: 2.svw;
+    letter-spacing: 1px;
+}
+
+/*Menu de navegação */
+.nav-busca {
+    background-color: rgb(15, 15, 15);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav-busca ul {
+    list-style: none;
+    text-align: center;
+}
+.nav-busca ul li {
+    display: inline;
+    margin: 0 15px;
+    
+}
+.nav-busca ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    
+
+}
+
+.nav-busca ul li a:hover {
+    text-decoration: underline;
+    color: rgb(202, 0, 205);
+    font-size: large;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+}
+
+.perfil:hover {
+     font-size: large;
+     color: rgb(202, 0, 205);
+}
+
+.perfil img{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(44, 24, 26, 0.7),
+        rgba(44, 24, 16, 0.3)
+    ),
+    url("https://i.pinimg.com/736x/d8/9e/b1/d89eb1c3b6ddfcc2773ce6e513f3e8e0.jpg");
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #3a0041;
+    font-family: 'Playfair Display';
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition: scale 0.5s;
+}
+.btn-primary:hover {
+    background-color: #050005;
+    scale: 0.9;
+}
+
+.principais-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+    background-color: #111;
+    flex-wrap: wrap;
+    padding: 50px;
+    text-align: center;
+    background-color: #111;
+}
+.cursos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.curso {
+    background-color: #1b1b1b;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.curso:hover {
+    transform: scale(1.05);
+}
+.curso img {
+    width: 100%;
+    border-radius: 10px;
+}
+.curso h3 {
+    margin-top: 15px;
+    color: #602c60;
+}
+.curso button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(84, 0, 82);
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display';
+    cursor: pointer;
+    border-radius: 5px;
+}
