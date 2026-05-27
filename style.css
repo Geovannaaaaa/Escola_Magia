@@ -275,6 +275,14 @@ aside a {
     0 0 10px #b300ff,
     0 0 20px #6a006f;
 }
+.letra-grande{
+    font-size:6rem;
+    color:#ffffff;
+    text-shadow:
+    0 0 10px purple,
+    0 0 20px #b300ff;
+    font-family:'UnifrakturCook';
+}
 .sobre-txt p {
     color: #ffffff;
     font-size: 1.1rem;
