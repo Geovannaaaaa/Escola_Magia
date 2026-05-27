@@ -14,6 +14,10 @@ body {
 header {
          background-color: rgb(90, 0, 94);
          color: rgb(255, 255, 255);
+         text-shadow:
+        0 0 5px rgb(0, 0, 0),
+        0 0 10px #000000,
+        0 0 20px #000000;
          text-align: center;
          padding: 30px 20px;
          border-bottom:3px solid #000000
@@ -35,6 +39,7 @@ header h1 {
     
 }
 .nav-busca ul {
+    display: flex;
     list-style: none;
     text-align: center;
 }
@@ -47,14 +52,16 @@ header h1 {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
-    
-
 }
 
 .nav-busca ul li a:hover {
     text-decoration: underline;
     color: rgb(202, 0, 205);
     font-size: large;
+    text-shadow:
+    0 0 5px purple,
+    0 0 10px #b300ff,
+    0 0 20px #6a006f;
 }
 
 .perfil{
@@ -67,12 +74,21 @@ header h1 {
 .perfil:hover {
      font-size: large;
      color: rgb(202, 0, 205);
+     text-shadow:
+     0 0 5px purple,
+     0 0 10px #b300ff,
+     0 0 20px #6a006f;
 }
 
 .perfil img{
     width:35px;
     height:35px;
     border-radius:50%;
+}
+
+.busca-icon {
+    background-color: #f59aff;
+    border-color: #3a0041;
 }
 
 .hero {
@@ -102,7 +118,7 @@ header h1 {
 
 .btn-primary {
     background-color: #3a0041;
-    font-family: 'Playfair Display';
+    font-family: 'UnifrakturCook';
     color: white;
     padding: 1rem 2rem;
     border: none;
@@ -115,6 +131,7 @@ header h1 {
 .btn-primary:hover {
     background-color: #050005;
     scale: 0.9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .principais-cursos {
@@ -127,6 +144,12 @@ header h1 {
     flex-wrap: wrap;
     padding: 50px;
     text-align: center;
+}
+.principais-cursos h2 {
+    text-shadow:
+    0 0 5px purple,
+    0 0 10px #b300ff,
+    0 0 20px #6a006f;
 }
 .cursos {
     display: flex;
@@ -141,6 +164,7 @@ header h1 {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     transition: 0.4s;
+    flex: 1;
 }
 .curso:hover {
     transform: scale(1.05);
@@ -190,6 +214,9 @@ aside {
     text-align: center;
     transition: 0.3s;
 }
+aside strong {
+    font-family: 'Cinzel Decorative';
+}
 aside:hover{
     transform: translateY(-10px);
     box-shadow: 0 0 20px rgba(128,0,128,0.5);
@@ -214,4 +241,53 @@ aside hr {
 }
 aside a {
     color: #000000;
+}
+
+/* Sobre nós */
+.sobre {
+    padding: 4rem 0;
+}
+.sobre-flex {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.sobre-img {
+    flex: 1;
+}
+.sobre-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.4);
+}
+.sobre-txt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sobre-txt h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-family: 'UnifrakturCook';
+    text-shadow:
+    0 0 5px purple,
+    0 0 10px #b300ff,
+    0 0 20px #6a006f;
+}
+.sobre-txt p {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+.qualidades {
+    list-style-type:"🕯️ ";
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.qualidades li {
+    color: #ffffff;
+    font-size: 1.1rem;
 }
